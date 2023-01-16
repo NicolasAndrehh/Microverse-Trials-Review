@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container my-4 py-4">
+      <h1 class="text-center pt-3" id="title">Microverse Survey Form</h1>
+      <p class="text-center" id="description">This is the trial of Microverse</p>
+      <form id="survey-form">
+        <div class="mb-3">
+          <label id="name-label" for="exampleInputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="namehelp" required>
+        </div>
+        <div class="mb-3">
+          <label id="email-label" for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label id="number-label" for="exampleInputNumber" class="form-label">Number</label>
+          <input type="number" class="form-control" id="number" min="1" max="100" placeholder="Enter a number between 1 to 100">
+        </div>
+        <select class="form-select" aria-label="Default select example" id="dropdown">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+
+        <label for="">What is your gender</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Male
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Female
+          </label>
+        </div>
+        
+        <label for="">Which languages do you master</label>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" value="HTML">
+          <label class="form-check-label" for="exampleCheck1">HTML</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" value="CSS">
+          <label class="form-check-label" for="exampleCheck1">CSS</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" value="JS">
+          <label class="form-check-label" for="exampleCheck1">JavaScript</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" value="PHP">
+          <label class="form-check-label" for="exampleCheck1">PHP</label>
+        </div>
+
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+    </div>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
